@@ -17,7 +17,6 @@ public class HorizontalRoadsRightLanes : MonoBehaviour
         if (collision.CompareTag("CarCollider") || collision.CompareTag("HorizontalRoadsRight"))
         {
             Car.SendMessage("OnHorizontalRoadRight");
-            Debug.Log("OnHorizontal Road");
         }
     }
 
@@ -26,7 +25,6 @@ public class HorizontalRoadsRightLanes : MonoBehaviour
         if (collision.CompareTag("CarCollider") || collision.CompareTag("HorizontalRoadsRight"))
         {
             Car.SendMessage("OffHorizontalRoadRight");
-            Debug.Log("OffHorizontalRoad");
         }
     }
 

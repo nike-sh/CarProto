@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class CarController : MonoBehaviour
 {
+    
     Animator anim;
     Rigidbody2D rbCar;
-    public GameObject CarCollider;
+    [SerializeField]
+    GameObject CarCollider;
+    [SerializeField]
+    GameObject SlowMotionTriggerObj;
+    [SerializeField]
+    GameObject SlowMotionTriggerFalseObj;
+
 
     float inputX;
     float inputY;
@@ -36,12 +44,34 @@ public class CarController : MonoBehaviour
     bool verticalRoadLeft;
     bool verticalRoadRight;
 
+    //manipulating the camera while in slowmotion.
+    [SerializeField]
+    CinemachineVirtualCamera vcam; //Finding CM Vcam1;
+    bool SlowMotionTrigger; 
+    float zoomOutSize = 6.25f; //Zoom out size which is basically the original lens' orthographic size
+    float zoomInSize = 1.75f; //How much we want to zoom in
+    float zoomInDiff; //Difference between zoom in size and zoom out size(the original orthographic size)
+    float zoomOutDiff;
+    float zoomSpeed = 15f; //without this, the zoom would be instant and wouldn't feel smooth
+    float zoomInTimer; //when this timer ends, the camera zooms out
+    float zoomInTimerValue = 0.7f;
+    float TimeScaleTimer; //when this timer ends, the TimeScale is back to its original value (ends the slow motion)
+    float TimeScaleTimerValue = 0.1f;
+
+
+
+    bool SpawnSpikesActive; // Boolean that indicates wether or not the spikes are active. If we didnt have this, the SlowMotionTriggerObj part of the Movement() void wouldn't work and would create problems with the dodge function.
+
+
+
 
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rbCar = GetComponent<Rigidbody2D>();
+        
+        
 
         resetLinearTimer = resetLinearTimerValue;
         dodgeCooldown = dodgeReady;
@@ -53,9 +83,14 @@ public class CarController : MonoBehaviour
         verticalRoadLeft = false;
         verticalRoadRight = false;
 
+        SlowMotionTrigger = false;
+        zoomInTimer = zoomInTimerValue;
+        TimeScaleTimer = TimeScaleTimerValue;
 
-
+        SpawnSpikesActive = false;
     }
+
+
 
     // Update is called once per frame
     void Update()
@@ -68,8 +103,14 @@ public class CarController : MonoBehaviour
         Movement();
         Dodge();
         TimerResets();
-        
+        SlowMotion();
+
+
     }
+
+
+
+
 
     void Movement()
     {
@@ -79,9 +120,15 @@ public class CarController : MonoBehaviour
             //up and left
             if (movement.x == -1 && movement.y == 1)
             {
-                rbCar.AddForce(movement.normalized * Speed);
-                anim.SetInteger("CarDirection", 2);
-                CarCollider.SendMessage("diagonal135");
+                rbCar.AddForce(movement.normalized * Speed); // pushing the car in a direction, depending on user input (W,A,S,D)
+                anim.SetInteger("CarDirection", 2); // changing the animation
+                CarCollider.SendMessage("diagonal135"); // changing the collision box
+                if(SpawnSpikesActive == true) //If the spikes in SpawnSpikes obj are active.
+                {
+                    SlowMotionTriggerObj.SendMessage("CarNotFacingRight"); //Informs the left trigger of the spikes in which direction the car is going. This makes the trigger either a destruction trigger or a "start the slowmotion" trigger.
+                    SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight"); // Informt the right trigger of the spikes the exact same thing.
+                }
+                
             }
 
             //up and right
@@ -90,6 +137,13 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 4);
                 CarCollider.SendMessage("diagonal45");
+                if(SpawnSpikesActive == true)
+                {
+                    SlowMotionTriggerObj.SendMessage("CarFacingRight");
+                    SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
+                }
+                
+
             }
 
             //down and left
@@ -98,6 +152,12 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 8);
                 CarCollider.SendMessage("diagonal45");
+                if(SpawnSpikesActive == true)
+                {
+                    SlowMotionTriggerObj.SendMessage("CarNotFacingRight");
+                    SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
+                }
+                
             }
 
             //down and right
@@ -106,6 +166,12 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 6);
                 CarCollider.SendMessage("diagonal135");
+                if (SpawnSpikesActive == true)
+                {
+                    SlowMotionTriggerObj.SendMessage("CarFacingRight");
+                    SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
+                }
+
             }
         }
         else
@@ -116,6 +182,11 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 1);
                 CarCollider.SendMessage("horizontal");
+                if (SpawnSpikesActive == true)
+                {
+                    SlowMotionTriggerObj.SendMessage("CarNotFacingRight");
+                    SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
+                }
             }
 
             //right
@@ -124,6 +195,12 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 5);
                 CarCollider.SendMessage("horizontal");
+                if (SpawnSpikesActive == true)
+                {
+                    SlowMotionTriggerObj.SendMessage("CarFacingRight");
+                    SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
+                }
+
             }
 
             //up
@@ -144,6 +221,8 @@ public class CarController : MonoBehaviour
         }
 
     }
+
+
 
 
     void Dodge()
@@ -248,25 +327,53 @@ public class CarController : MonoBehaviour
     }
 
 
+
+
+    void SlowMotion()
+    {  
+        if(SlowMotionTrigger == true)
+        {
+            Time.timeScale = 0.2f; //Slowing down the time.
+            Time.fixedDeltaTime = 0.02f * Time.timeScale; //Making everysingle frame smooth and not laggy/choppy, since we've lowered the timescale value.
+            zoomInDiff = zoomInSize - vcam.m_Lens.OrthographicSize;
+            zoomOutDiff = zoomOutSize - vcam.m_Lens.OrthographicSize;
+            vcam.m_Lens.OrthographicSize += zoomInDiff * zoomSpeed * Time.deltaTime; //the actual zoom in
+            zoomInTimer -= Time.deltaTime;
+            if(zoomInTimer < 0)
+            {
+                vcam.m_Lens.OrthographicSize += zoomOutDiff * zoomSpeed * Time.deltaTime;
+                TimeScaleTimer -= Time.deltaTime;
+                if(TimeScaleTimer < 0)
+                {
+                    Time.timeScale = 1f; // setting the timescale and fixeddeltatime to default
+                    Time.fixedDeltaTime = 0.02f * Time.timeScale;
+                }
+            }
+        }
+            
+    }
+
+
+
+
     //resets the linear drag and the dodge cooldown
     void TimerResets()
     {
         //resets the linear drag and sets the triggertimer boolean to false again after 0.125 seconds.
-        if(triggerTimer)
+        if (triggerTimer)
         {
 
             resetLinearTimer -= Time.deltaTime;
-            if (resetLinearTimer <= 0f )
+            if (resetLinearTimer <= 0f)
             {
-                Debug.Log("LinearTimer is 0");
                 rbCar.drag = resetLinear;
                 resetLinearTimer = resetLinearTimerValue;
                 triggerTimer = false;
 
             }
-            
+
         }
-        
+
         //resets the dodge cooldown after 1 second.
         if (triggerDodgeTimer)
         {
@@ -278,6 +385,35 @@ public class CarController : MonoBehaviour
             }
         }
 
+    }
+
+
+
+
+    void SlowMotionCol() //whenever the car collides with the (invisible) collision box in front of the spikes, the slowmotiontrigger is true and the slow motion can start 
+    {
+        SlowMotionTrigger = true;
+    }
+
+
+
+
+    void SlowMotionColFalse() //whenever the car collides with the (invisible) collision box after the spikes, the slowmotiontrigger resets (is set to false) and the zoomInTimer and TimeScaleTimer are reset to their original value;(so if the player encounters other spikes in the game, the script to work)
+    {
+        SlowMotionTrigger = false;
+        zoomInTimer = zoomInTimerValue;
+        TimeScaleTimer = TimeScaleTimerValue;
+    }
+
+
+    void SpikesAreActive()
+    {
+        SpawnSpikesActive = true;
+    }
+
+    void SpikesArentActive()
+    {
+        SpawnSpikesActive = false;
     }
 
 

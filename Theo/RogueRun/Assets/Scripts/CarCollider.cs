@@ -26,17 +26,17 @@ public class CarCollider : MonoBehaviour
         if(horizontaltrigger == true && verticaltrigger == false && diagonal45trigger == false && diagonal135trigger == false)
         {
             transform.eulerAngles = Vector3.forward * 180;
-            Debug.Log("changed collision box to horizontal");
+
         }
         else if(verticaltrigger == true && horizontaltrigger == false && diagonal45trigger == false && diagonal135trigger == false)
         {
             transform.eulerAngles = Vector3.forward * 90;
-            Debug.Log("changed collision box to vertical");
+
         }
         else if(diagonal45trigger == true && horizontaltrigger == false && verticaltrigger == false && diagonal135trigger == false)
         {
             transform.eulerAngles = Vector3.forward * 45;
-            Debug.Log("changed collision box to diagonal");
+
         }
         else if(diagonal135trigger == true && diagonal45trigger == false && horizontaltrigger == false && verticaltrigger == false)
         {

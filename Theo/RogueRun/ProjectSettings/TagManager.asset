@@ -10,6 +10,11 @@ TagManager:
   - VerticalRoadsLeft
   - VerticalRoadsRight
   - CarCollider
+  - SlowmotionTrigger
+  - ResetTimeTrigger
+  - SlowMotionTriggerFalse
+  - SpawnSpikes
+  - Spikes
   layers:
   - Default
   - TransparentFX

@@ -16,8 +16,6 @@ public class VerticalRoadsRightLanes : MonoBehaviour
         if (collision.CompareTag("CarCollider") || collision.CompareTag("VerticalRoadsRight"))
         {
             Car.SendMessage("OnVerticalRoadRight");
-
-            Debug.Log("OnVerticalRoad");
         }
     }
 
@@ -27,8 +25,6 @@ public class VerticalRoadsRightLanes : MonoBehaviour
         if (collision.CompareTag("CarCollider") || collision.CompareTag("VerticalRoadsRight"))
         {
             Car.SendMessage("OffVerticalRoadRight");
-
-            Debug.Log("OffVerticalRoad");
         }
     }
 
