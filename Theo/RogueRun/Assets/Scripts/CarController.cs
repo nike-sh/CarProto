@@ -16,34 +16,25 @@ public class CarController : MonoBehaviour
 
 
     float dodgeForceHorizontal1 = 10f; //force being used for the dodge(on horizontal roads)
-    float dodgeForceVertical1 = 12.5f; // force being used for the dodge(on horizontal roads)
-    float dodgeForceHorizontal2 = 10f; //force being used for the dodge(on vertical roads)
-    float dodgeForceVertical2 = 12.5f; //force being used for the dodge(on vertical roads)
-    float resetLinear = 2f; //resetting the linear drag since if its 15f, the car goes too slow
+    float dodgeForceVertical1 = 15f; // force being used for the dodge(on horizontal roads)
+    float dodgeForceHorizontal2 = 15f; //force being used for the dodge(on vertical roads)
+    float dodgeForceVertical2 = 10f; //force being used for the dodge(on vertical roads)
+    float resetLinear = 2f; //resetting the linear drag since if its 15f, the car goes way too slow since there is more "friction"
     float dodgeLinear = 15f;//pumping up the linear drag so the car dodges smoothly 
 
     bool triggerTimer; //used for resetting the linear drag
-    float resetLinearTimerValue = 0.15f; 
+    float resetLinearTimerValue = 0.125f;
     float resetLinearTimer;
     
     bool triggerDodgeTimer; //used for resetting the cooldown of the dodge, since the player can spam the dodge button.
     float dodgeCooldown;
     float dodgeReady = 1f;
 
-
+    //next booleans point out wether if the car is on a certain road and lane or not.
     bool horizontalRoadLeft;
     bool horizontalRoadRight;
     bool verticalRoadLeft;
     bool verticalRoadRight;
-
-
-
-
-
-
-
-
-
 
 
 
@@ -158,65 +149,70 @@ public class CarController : MonoBehaviour
     void Dodge()
     {
 
-
-        //dodging while on a horizontal road and a left lane
-       
-            if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (dodgeCooldown == dodgeReady)
             {
-                if (dodgeCooldown == dodgeReady)
+                
+                if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarRight")) //checking which direction is the car facing.
                 {
-
-                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarRight"))
+                    
+                    if (horizontalRoadLeft == true) //checking on which road and lane the car is on
                     {
-                        rbCar.drag = dodgeLinear;
-                        if(horizontalRoadLeft == true && horizontalRoadRight == false)
-                        {
-                            rbCar.AddForce(transform.up * dodgeForceHorizontal1, ForceMode2D.Impulse);
-                            rbCar.AddForce(transform.right * dodgeForceVertical1, ForceMode2D.Impulse);
-                        }
+                        rbCar.drag = dodgeLinear; //setting the linear drag to 15 so there is more "friction" between the car and the road
 
-                    if (horizontalRoadRight == true && horizontalRoadLeft == false)
-                        {
-                            rbCar.AddForce(transform.up * -dodgeForceHorizontal1, ForceMode2D.Impulse);
-                            rbCar.AddForce(transform.right * dodgeForceVertical1, ForceMode2D.Impulse);
-                        }
-                        
-                        triggerTimer = true;
-                        triggerDodgeTimer = true;
+                        //the actual dodge
+                        rbCar.AddForce(transform.up * dodgeForceHorizontal1, ForceMode2D.Impulse);
+                        rbCar.AddForce(transform.right * dodgeForceVertical1, ForceMode2D.Impulse);
                     }
 
-                    if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarLeft"))
+                    if (horizontalRoadRight == true)
+                    {
+                        rbCar.drag = dodgeLinear; 
+                        rbCar.AddForce(transform.up * -dodgeForceHorizontal1, ForceMode2D.Impulse);
+                        rbCar.AddForce(transform.right * dodgeForceVertical1, ForceMode2D.Impulse);
+                    }
+
+                    triggerTimer = true; //triggers the timer which resets the linear drag
+                    triggerDodgeTimer = true; //triggers the timer which resets the cooldown of the dodge/dash
+                }
+
+                if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarLeft"))
+                {
+                    
+                    if (horizontalRoadLeft == true)
                     {
                         rbCar.drag = dodgeLinear;
-                        if (horizontalRoadLeft == true && horizontalRoadRight == false)
-                        {
-                            rbCar.AddForce(transform.up * dodgeForceHorizontal1, ForceMode2D.Impulse);
-                            rbCar.AddForce(transform.right * -dodgeForceVertical1, ForceMode2D.Impulse);
-                        }
-
-                    if (horizontalRoadRight == true && horizontalRoadLeft == false)
-                        {
-                            rbCar.AddForce(transform.up * -dodgeForceHorizontal1, ForceMode2D.Impulse);
-                            rbCar.AddForce(transform.right * -dodgeForceVertical1, ForceMode2D.Impulse);
-                        }
-                            
-                        triggerTimer = true;
-                        triggerDodgeTimer = true;
+                        rbCar.AddForce(transform.up * dodgeForceHorizontal1, ForceMode2D.Impulse);
+                        rbCar.AddForce(transform.right * -dodgeForceVertical1, ForceMode2D.Impulse);
                     }
+
+                    if (horizontalRoadRight == true)
+                    {
+                        rbCar.drag = dodgeLinear;
+                        rbCar.AddForce(transform.up * -dodgeForceHorizontal1, ForceMode2D.Impulse);
+                        rbCar.AddForce(transform.right * -dodgeForceVertical1, ForceMode2D.Impulse);
+                    }
+
+                    triggerTimer = true;
+                    triggerDodgeTimer = true;
+                }
 
 
 
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarUp"))
                 {
-                    rbCar.drag = dodgeLinear;
-                    if (verticalRoadLeft == true && verticalRoadRight == false)
+                    
+                    if (verticalRoadLeft == true)
                     {
+                        rbCar.drag = dodgeLinear;
                         rbCar.AddForce(transform.up * dodgeForceHorizontal2, ForceMode2D.Impulse);
                         rbCar.AddForce(transform.right * dodgeForceVertical2, ForceMode2D.Impulse);
                     }
 
-                    if (verticalRoadRight == true && verticalRoadLeft == false)
+                    if (verticalRoadRight == true)
                     {
+                        rbCar.drag = dodgeLinear;
                         rbCar.AddForce(transform.up * dodgeForceHorizontal2, ForceMode2D.Impulse);
                         rbCar.AddForce(transform.right * -dodgeForceVertical2, ForceMode2D.Impulse);
                     }
@@ -227,15 +223,17 @@ public class CarController : MonoBehaviour
 
                 if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarDown"))
                 {
-                    rbCar.drag = dodgeLinear;
-                    if (verticalRoadLeft == true && verticalRoadRight == false)
+                   
+                    if (verticalRoadLeft == true)
                     {
+                        rbCar.drag = dodgeLinear;
                         rbCar.AddForce(transform.up * -dodgeForceHorizontal2, ForceMode2D.Impulse);
                         rbCar.AddForce(transform.right * dodgeForceVertical2, ForceMode2D.Impulse);
                     }
 
-                    if (verticalRoadRight == true && verticalRoadLeft == false)
+                    if (verticalRoadRight == true)
                     {
+                        rbCar.drag = dodgeLinear;
                         rbCar.AddForce(transform.up * -dodgeForceHorizontal2, ForceMode2D.Impulse);
                         rbCar.AddForce(transform.right * -dodgeForceVertical2, ForceMode2D.Impulse);
                     }
@@ -244,26 +242,16 @@ public class CarController : MonoBehaviour
                     triggerDodgeTimer = true;
                 }
 
-
-
-
-
-
-
-
-
-
-
             }
-            }
-        
+
+        }
     }
 
 
-
-
+    //resets the linear drag and the dodge cooldown
     void TimerResets()
     {
+        //resets the linear drag and sets the triggertimer boolean to false again after 0.125 seconds.
         if(triggerTimer)
         {
 
@@ -278,7 +266,8 @@ public class CarController : MonoBehaviour
             }
             
         }
-
+        
+        //resets the dodge cooldown after 1 second.
         if (triggerDodgeTimer)
         {
             dodgeCooldown -= Time.deltaTime;
@@ -292,7 +281,7 @@ public class CarController : MonoBehaviour
     }
 
 
-
+    //next 8 void functinos are for detecting the roads and lanes the car is driving on.
     void OnHorizontalRoadLeft()
     {
         horizontalRoadLeft = true;
