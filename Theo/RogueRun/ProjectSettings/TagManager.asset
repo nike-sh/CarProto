@@ -5,8 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Car
-  - HorizontalRoads
-  - VerticalRoads
+  - HorizontalRoadsLeft
+  - HorizontalRoadsRight
+  - VerticalRoadsLeft
+  - VerticalRoadsRight
+  - CarCollider
   layers:
   - Default
   - TransparentFX
