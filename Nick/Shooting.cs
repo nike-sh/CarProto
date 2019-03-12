@@ -98,16 +98,16 @@ void getHorizontal()
     print(hVelocity);
 }
 
-void move()
-{
-    if (charRB.position 
+//void move()
+//{
+//    if (charRB.position.
 
-    // changes horizontal position
-    charRB.transform.position = new Vector2(charRB.transform.position.x + hVelocity, charRB.transform.position.y);
+//    // changes horizontal position
+//    charRB.transform.position = new Vector2(charRB.transform.position.x + hVelocity, charRB.transform.position.y);
 
-    // changes vertical velocity
-    charRB.velocity += (Vector2.up * vVelocity);
-}
+//    // changes vertical velocity
+//    charRB.velocity += (Vector2.up * vVelocity);
+//}
 
 
 
