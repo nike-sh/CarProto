@@ -15,11 +15,13 @@ public class CarController : MonoBehaviour
     [SerializeField]
     GameObject SlowMotionTriggerFalseObj;
 
+    public GameObject shotPrefab;
 
     float inputX;
     float inputY;
     private Vector2 movement;
     float Speed = 15f;
+    float bulletSpeed = 20f;
 
 
 
@@ -63,14 +65,16 @@ public class CarController : MonoBehaviour
     bool SpawnSpikesActive; // Boolean that indicates wether or not the spikes are active. If we didnt have this, the SlowMotionTriggerObj part of the Movement() void wouldn't work and would create problems with the dodge function.
 
 
-
+    int CarDir;
 
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rbCar = GetComponent<Rigidbody2D>();
+        CarDir = 1;
 
+        
 
 
         resetLinearTimer = resetLinearTimerValue;
@@ -130,6 +134,7 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight"); // Informt the right trigger of the spikes the exact same thing.
                 }
 
+                CarDir = 2;
             }
 
             //up and right
@@ -144,7 +149,7 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
 
-
+                CarDir = 4;
             }
 
             //down and left
@@ -159,6 +164,7 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
                 }
 
+                CarDir = 8;
             }
 
             //down and right
@@ -172,6 +178,8 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerObj.SendMessage("CarFacingRight");
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
+
+                CarDir = 6;
 
             }
         }
@@ -188,6 +196,8 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerObj.SendMessage("CarNotFacingRight");
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
                 }
+
+                CarDir = 1;
             }
 
             //right
@@ -202,6 +212,8 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
 
+                CarDir = 5;
+
             }
 
             //up
@@ -210,6 +222,8 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 3);
                 CarCollider.SendMessage("vertical");
+
+                CarDir = 3;
             }
 
             //down
@@ -218,6 +232,7 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 7);
                 CarCollider.SendMessage("vertical");
+                CarDir = 7;
             }
         }
 
@@ -464,11 +479,57 @@ public class CarController : MonoBehaviour
 
     void Shooting()
     {
-        GameObject shot;
+        
                 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(shot, rbCar.position, Quaternion.identity);
+           GameObject shot = Instantiate(shotPrefab, rbCar.position, Quaternion.identity);
+            // these are for right, left, up and down
+           if(inputX != 0 && inputY != 0)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, 0);
+            }
+            if (CarDir == 1)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, 0);
+            }
+            if (CarDir == 3)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(0, bulletSpeed);
+            }
+            if (CarDir == 7)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -bulletSpeed);
+            }
+
+
+
+            // these are for the diagonals
+            if (inputX != 0 && inputY != 0)
+            {
+                if (movement.x == 1 && movement.y == 1)
+                {
+                    shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, bulletSpeed);
+                }
+            }
+
+
+
+
+                
+            if (CarDir == 2)
+            {
+                Debug.Log("It Shoots");
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, bulletSpeed);
+            }
+            if (CarDir == 6)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, -bulletSpeed);
+            }
+            if (CarDir == 8)
+            {
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, -bulletSpeed);
+            }
         }
     }
 }
