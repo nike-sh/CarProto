@@ -15,8 +15,7 @@ TagManager:
   - SlowMotionTriggerFalse
   - SpawnSpikes
   - Spikes
-  - Crosshair
-  - Projectile
+  - TransparencyBox
   layers:
   - Default
   - TransparentFX

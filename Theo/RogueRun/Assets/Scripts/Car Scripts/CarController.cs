@@ -481,55 +481,50 @@ public class CarController : MonoBehaviour
     {
         
                 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.X))
         {
            GameObject shot = Instantiate(shotPrefab, rbCar.position, Quaternion.identity);
+
+
             // these are for right, left, up and down
-           if(inputX != 0 && inputY != 0)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarRight"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, 0);
             }
-            if (CarDir == 1)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarLeft"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, 0);
             }
-            if (CarDir == 3)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarUp"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(0, bulletSpeed);
             }
-            if (CarDir == 7)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarDown"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -bulletSpeed);
             }
 
 
-
             // these are for the diagonals
-            if (inputX != 0 && inputY != 0)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarUpRight"))
             {
-                if (movement.x == 1 && movement.y == 1)
-                {
-                    shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, bulletSpeed);
-                }
+                shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, bulletSpeed);
             }
-
-
-
-
-                
-            if (CarDir == 2)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarUpLeft"))
             {
-                Debug.Log("It Shoots");
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, bulletSpeed);
             }
-            if (CarDir == 6)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarDownRight"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(bulletSpeed, -bulletSpeed);
             }
-            if (CarDir == 8)
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("CarDownLeft"))
             {
                 shot.GetComponent<Rigidbody2D>().velocity = new Vector2(-bulletSpeed, -bulletSpeed);
             }
+
+
+
         }
     }
 }

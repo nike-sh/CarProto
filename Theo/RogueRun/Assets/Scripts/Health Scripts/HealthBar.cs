@@ -45,4 +45,10 @@ public class HealthBar : MonoBehaviour
             anim.SetInteger("DamageTaken", 4);
         }
     }
+
+
+    void SpikesDamage()
+    {
+        currenthp -= Damage;
+    }
 }

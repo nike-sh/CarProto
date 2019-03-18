@@ -71,8 +71,8 @@ public class SpawnSpikes : MonoBehaviour
     void ChangePosition()
     {
         pos = transform.position;
-        pos.x = -16f;
-        pos.y = 14f;
+        pos.x = -14f;
+        pos.y = 20.24f;
         transform.position = pos;
         if(changedPositionOnce)
         {
