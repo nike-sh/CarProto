@@ -5,14 +5,14 @@ using UnityEngine;
 public class Projectille : MonoBehaviour {
     private Vector2 target;
     public float speed;
-    public GameObject crosshair;
+    public Vector2 crosshair;
     public GameObject shot;
 
 
     // Use this for initialization
     void Start () {
         crosshair = GameObject.FindGameObjectWithTag("Crosshair").transform;
-        target = new Vector2(crosshair.position.x, crosshair.position.y);
+        target = new Vector2(crosshair.x, crosshair.y);
 
     }
 
