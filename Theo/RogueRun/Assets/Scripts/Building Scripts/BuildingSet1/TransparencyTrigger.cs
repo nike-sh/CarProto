@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class TransparencyTrigger : MonoBehaviour {
     [SerializeField]
-    GameObject Building1;
+    GameObject Building;
 
 
 
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("CarCollider") || collision.CompareTag("TransparencyBox"))
         {
-            Building1.SendMessage("StartAnimation");
+            Building.SendMessage("StartAnimation");
             
         }
     }
 
 
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("CarCollider") || collision.CompareTag("TransparencyBox"))
         {
-            Building1.SendMessage("StopAnimation");
+            Building.SendMessage("StopAnimation");
         }
     }
 

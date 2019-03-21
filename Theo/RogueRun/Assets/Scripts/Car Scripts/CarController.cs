@@ -20,6 +20,8 @@ public class CarController : MonoBehaviour
     float inputX;
     float inputY;
     private Vector2 movement;
+    float animationTimer;
+    float animationTimerValue = 0.2f;
     float Speed = 15f;
     float bulletSpeed = 20f;
 
@@ -65,18 +67,15 @@ public class CarController : MonoBehaviour
     bool SpawnSpikesActive; // Boolean that indicates wether or not the spikes are active. If we didnt have this, the SlowMotionTriggerObj part of the Movement() void wouldn't work and would create problems with the dodge function.
 
 
-    int CarDir;
+
 
 
     void Start()
     {
         anim = GetComponent<Animator>();
         rbCar = GetComponent<Rigidbody2D>();
-        CarDir = 1;
 
-        
-
-
+        animationTimer = animationTimerValue;
         resetLinearTimer = resetLinearTimerValue;
         dodgeCooldown = dodgeReady;
         triggerDodgeTimer = false;
@@ -111,75 +110,116 @@ public class CarController : MonoBehaviour
         Shooting();
 
 
-    }
 
+    }
 
 
 
 
     void Movement()
     {
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
+        {
+            animationTimer = animationTimerValue;
+        }
 
-        if (inputX != 0 && inputY != 0)
+
+
+            if (inputX != 0 && inputY != 0)
         {
             //up and left
             if (movement.x == -1 && movement.y == 1)
             {
                 rbCar.AddForce(movement.normalized * Speed); // pushing the car in a direction, depending on user input (W,A,S,D)
-                anim.SetInteger("CarDirection", 2); // changing the animation
-                CarCollider.SendMessage("diagonal135"); // changing the collision box
+
+
+
+                animationTimer -= Time.deltaTime;
+                if(animationTimer < 0)
+                {
+                    anim.SetInteger("CarDirection", 2); // changing the animation
+                    animationTimer = animationTimerValue;
+                    CarCollider.SendMessage("diagonal135"); // changing the collision box
+                }
+
+                
+
+
+                
+                
                 if (SpawnSpikesActive == true) //If the spikes in SpawnSpikes obj are active.
                 {
                     SlowMotionTriggerObj.SendMessage("CarNotFacingRight"); //Informs the left trigger of the spikes in which direction the car is going. This makes the trigger either a destruction trigger or a "start the slowmotion" trigger.
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight"); // Informt the right trigger of the spikes the exact same thing.
                 }
 
-                CarDir = 2;
+                
             }
 
             //up and right
             if (movement.x == 1 && movement.y == 1)
             {
                 rbCar.AddForce(movement.normalized * Speed);
-                anim.SetInteger("CarDirection", 4);
-                CarCollider.SendMessage("diagonal45");
+                animationTimer -= Time.deltaTime;
+                if (animationTimer < 0)
+                {
+                    anim.SetInteger("CarDirection", 4);
+                    CarCollider.SendMessage("diagonal45");
+                    animationTimer = animationTimerValue;
+                }
+                    
+                
                 if (SpawnSpikesActive == true)
                 {
                     SlowMotionTriggerObj.SendMessage("CarFacingRight");
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
 
-                CarDir = 4;
+               
             }
 
             //down and left
             if (movement.x == -1 && movement.y == -1)
             {
                 rbCar.AddForce(movement.normalized * Speed);
-                anim.SetInteger("CarDirection", 8);
-                CarCollider.SendMessage("diagonal45");
+                animationTimer -= Time.deltaTime;
+                if (animationTimer < 0)
+                {
+                    anim.SetInteger("CarDirection", 8);
+                    CarCollider.SendMessage("diagonal45");
+                    animationTimer = animationTimerValue;
+                }
+                 
+                
                 if (SpawnSpikesActive == true)
                 {
                     SlowMotionTriggerObj.SendMessage("CarNotFacingRight");
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
                 }
 
-                CarDir = 8;
+         
             }
 
             //down and right
             if (movement.x == 1 && movement.y == -1)
             {
                 rbCar.AddForce(movement.normalized * Speed);
-                anim.SetInteger("CarDirection", 6);
-                CarCollider.SendMessage("diagonal135");
+                animationTimer -= Time.deltaTime;
+                if (animationTimer < 0)
+                {
+                    anim.SetInteger("CarDirection", 6);
+                    CarCollider.SendMessage("diagonal135");
+                    animationTimer = animationTimerValue;
+                }
+                    
+                
                 if (SpawnSpikesActive == true)
                 {
                     SlowMotionTriggerObj.SendMessage("CarFacingRight");
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
 
-                CarDir = 6;
+         
 
             }
         }
@@ -189,6 +229,7 @@ public class CarController : MonoBehaviour
             if (movement.x == -1)
             {
                 rbCar.AddForce(movement.normalized * Speed);
+
                 anim.SetInteger("CarDirection", 1);
                 CarCollider.SendMessage("horizontal");
                 if (SpawnSpikesActive == true)
@@ -197,7 +238,7 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarNotFacingRight");
                 }
 
-                CarDir = 1;
+
             }
 
             //right
@@ -212,7 +253,6 @@ public class CarController : MonoBehaviour
                     SlowMotionTriggerFalseObj.SendMessage("CarFacingRight");
                 }
 
-                CarDir = 5;
 
             }
 
@@ -223,7 +263,7 @@ public class CarController : MonoBehaviour
                 anim.SetInteger("CarDirection", 3);
                 CarCollider.SendMessage("vertical");
 
-                CarDir = 3;
+               
             }
 
             //down
@@ -232,7 +272,7 @@ public class CarController : MonoBehaviour
                 rbCar.AddForce(movement.normalized * Speed);
                 anim.SetInteger("CarDirection", 7);
                 CarCollider.SendMessage("vertical");
-                CarDir = 7;
+            
             }
         }
 
