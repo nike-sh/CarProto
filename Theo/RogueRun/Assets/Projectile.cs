@@ -14,8 +14,8 @@ public class Projectile : MonoBehaviour
     Enemy Enemy;
     PlayerHealth PlayerHealth;
 
-    private float health;
-    private float damage;
+    private float Health;
+    private float Damage;
 
 
     // Start is called before the first frame update
@@ -23,11 +23,11 @@ public class Projectile : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Car").transform;
         target = new Vector2(player.position.x, player.position.y);
-        PlayerHealth = Car.GetComponent<PlayerHealth>();
-        Enemy = carDown.GetComponent<Enemy>();
+        PlayerHealth = Car.gameObject.GetComponent<PlayerHealth>();
+        Enemy = carDown.gameObject.GetComponent<Enemy>();
 
-        health = PlayerHealth.currentHealth;
-        damage = Enemy.enemyDamage;
+        Health = PlayerHealth.currentHealth;
+        Damage = Enemy.enemyDamage;
     }
 
     // Update is called once per frame
@@ -41,18 +41,20 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D CarCollider)
     {
-        if (other.CompareTag("Car"))
-        {
-            health -= damage;
+            Health -= Damage;
             DestroyProjectile();
-        }
     }
 
     void DestroyProjectile()
     {
         Destroy(gameObject);
+    }
+
+    public void HurtPlayer()
+    {
+        PlayerHealth.currentHealth -= Enemy.enemyDamage;
     }
   
 }

@@ -16,6 +16,7 @@ TagManager:
   - SpawnSpikes
   - Spikes
   - TransparencyBox
+  - Enemy
   layers:
   - Default
   - TransparentFX

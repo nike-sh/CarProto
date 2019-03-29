@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour {
 	public float followDistance;
 	public float stoppingDistance;
 	public Transform[] patrolPoints;
-	private int patrolSpots = 0;
+    private int patrolSpots = 0;
 	private NavMeshAgent agent;
 	//Enemy attack variables
 	public float attackDistance;
@@ -67,7 +67,7 @@ public class Enemy : MonoBehaviour {
 	void Update () {
         if (Vector2.Distance(transform.position, player.position) > followDistance)
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[patrolSpots].position, speed * Time.deltaTime);
-            if(Vector2.Distance(transform.position, patrolPoints[patrolSpots].position) < 0.2f)
+            if(Vector2.Distance(transform.position, patrolPoints[patrolSpots].position) <= 0.2f)
                 GoToNextPoint();
 
         if (Vector2.Distance(transform.position, player.position) > stoppingDistance && Vector2.Distance(transform.position, player.position) <= followDistance)
@@ -93,11 +93,11 @@ public class Enemy : MonoBehaviour {
 			
 	}
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("CarCollider"))
+        if (other.gameObject.CompareTag("Car"))
         {
-            health -= enemyDamage;
+            PlayerHealth.currentHealth -= enemyDamage;
             Death();
         }
     }
@@ -131,7 +131,6 @@ public class Enemy : MonoBehaviour {
 	
 	void Death(){
         currentScore += 100;
-        
-		GameObject.Destroy(gameObject);
+        Destroy(gameObject);
 	}
 }

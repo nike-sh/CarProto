@@ -26,10 +26,11 @@ public class GameController : MonoBehaviour {
     public Transform spawnPointTwo;
     public Transform spawnPointThree;
     public Transform spawnPointFour;
-    public Transform spawnPointFive;
-    public Transform spawnPointSix;
-    public GameObject enemy;
-    private int spawnChance = 5;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
+    public GameObject enemy4;
+    private int spawnChance = 4;
     private int randomSpawn;
 
     	
@@ -103,16 +104,12 @@ public class GameController : MonoBehaviour {
         randomSpawn = Random.Range(0, spawnChance);
 
         if (randomSpawn == 0)
-            Instantiate(enemy, spawnPointOne.position, Quaternion.identity);
+            Instantiate(enemy1, spawnPointOne.position, Quaternion.identity);
         else if (randomSpawn == 1)
-            Instantiate(enemy, spawnPointTwo.position, Quaternion.identity);
+            Instantiate(enemy2, spawnPointTwo.position, Quaternion.identity);
         else if (randomSpawn == 2)
-            Instantiate(enemy, spawnPointThree.position, Quaternion.identity);
+            Instantiate(enemy3, spawnPointThree.position, Quaternion.identity);
         else if (randomSpawn == 3)
-            Instantiate(enemy, spawnPointFour.position, Quaternion.identity);
-        else if (randomSpawn == 4)
-            Instantiate(enemy, spawnPointFive.position, Quaternion.identity);
-        else if (randomSpawn == 5)
-            Instantiate(enemy, spawnPointSix.position, Quaternion.identity);
+            Instantiate(enemy4, spawnPointFour.position, Quaternion.identity);
     }
 }
