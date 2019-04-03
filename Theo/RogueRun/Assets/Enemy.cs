@@ -93,14 +93,7 @@ public class Enemy : MonoBehaviour {
 			
 	}
 
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Car"))
-        {
-            PlayerHealth.currentHealth -= enemyDamage;
-            Death();
-        }
-    }
+
 
     void GoToNextPoint(){
 		if(patrolPoints.Length == 0)
@@ -133,4 +126,9 @@ public class Enemy : MonoBehaviour {
         currentScore += 100;
         Destroy(gameObject);
 	}
+
+    void TakeDamage()
+    {
+        currentHealth -= 25;
+    }
 }

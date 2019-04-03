@@ -8,6 +8,8 @@ public class BulletScript : MonoBehaviour {
     private float Damage = 25;
     [SerializeField]
     GameObject BulletPrefab;
+    [SerializeField]
+    GameObject EnemyHealthScript;
 
 
     private float Health;
@@ -17,6 +19,7 @@ public class BulletScript : MonoBehaviour {
     {
         BulletTimer = BulletTimerValue;
         Enemy = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
+        
         Health = Enemy.enemyHealth;
     }
 
@@ -37,7 +40,7 @@ public class BulletScript : MonoBehaviour {
         if(other.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("We hit the enemy with our gun!!");
-            Health -= Damage;
+            EnemyHealthScript.SendMessage("TakeDamage");
             Destroy(BulletPrefab);
         }
     }

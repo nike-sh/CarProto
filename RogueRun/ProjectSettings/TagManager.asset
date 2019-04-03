@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Car
+  - HorizontalRoadsLeft
+  - HorizontalRoadsRight
+  - VerticalRoadsLeft
+  - VerticalRoadsRight
+  - CarCollider
+  - SlowmotionTrigger
+  - ResetTimeTrigger
+  - SlowMotionTriggerFalse
+  - SpawnSpikes
+  - Spikes
+  - TransparencyBox
   layers:
   - Default
   - TransparentFX
@@ -38,6 +50,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: PauseMenu
+    uniqueID: 2039684843
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
