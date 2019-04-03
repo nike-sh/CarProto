@@ -21,6 +21,8 @@ TagManager:
   - Node
   - Bullet
   - Healthbar
+  - River
+  - RiverDeath
   layers:
   - Default
   - TransparentFX

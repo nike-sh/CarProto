@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -43,6 +44,7 @@ public class HealthBar : MonoBehaviour
         if(currenthp == 0)
         {
             anim.SetInteger("DamageTaken", 4);
+            EndScreen();
         }
     }
 
@@ -56,5 +58,15 @@ public class HealthBar : MonoBehaviour
     void EnemyDamage()
     {
         currenthp -= Damage;
+    }
+
+    void RiverDamage()
+    {
+        currenthp -= currenthp;
+    }
+
+    void EndScreen()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
