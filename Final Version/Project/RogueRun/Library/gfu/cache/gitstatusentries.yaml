@@ -1,0 +1,1302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 5
+  lastUpdatedAtString: 2019-04-03T18:22:40.413+03:00
+  initializedAtString: 2019-04-03T18:22:33.136+03:00
+  entries:
+  - path: Assets\Assets.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets.meta
+    projectPath: Assets\Assets.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations.meta
+    projectPath: Assets\Assets\Animations.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings.meta
+    projectPath: Assets\Assets\Animations\Buildings.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1_0.controller
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1_0.controller
+    projectPath: Assets\Assets\Animations\Buildings\Building1_0.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1_0.controller.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1_0.controller.meta
+    projectPath: Assets\Assets\Animations\Buildings\Building1_0.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1Idle.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1Idle.anim
+    projectPath: Assets\Assets\Animations\Buildings\Building1Idle.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1Idle.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1Idle.anim.meta
+    projectPath: Assets\Assets\Animations\Buildings\Building1Idle.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1Transparency.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1Transparency.anim
+    projectPath: Assets\Assets\Animations\Buildings\Building1Transparency.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Buildings\Building1Transparency.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Buildings\Building1Transparency.anim.meta
+    projectPath: Assets\Assets\Animations\Buildings\Building1Transparency.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car.meta
+    projectPath: Assets\Assets\Animations\Car.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDown.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDown.anim
+    projectPath: Assets\Assets\Animations\Car\CarDown.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDown.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDown.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarDown.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDownLeft.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDownLeft.anim
+    projectPath: Assets\Assets\Animations\Car\CarDownLeft.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDownLeft.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDownLeft.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarDownLeft.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDownRight.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDownRight.anim
+    projectPath: Assets\Assets\Animations\Car\CarDownRight.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarDownRight.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarDownRight.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarDownRight.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarLeft.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarLeft.anim
+    projectPath: Assets\Assets\Animations\Car\CarLeft.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarLeft.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarLeft.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarLeft.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarLeft.controller
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarLeft.controller
+    projectPath: Assets\Assets\Animations\Car\CarLeft.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarLeft.controller.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarLeft.controller.meta
+    projectPath: Assets\Assets\Animations\Car\CarLeft.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarRight.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarRight.anim
+    projectPath: Assets\Assets\Animations\Car\CarRight.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarRight.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarRight.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarRight.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUp.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUp.anim
+    projectPath: Assets\Assets\Animations\Car\CarUp.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUp.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUp.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarUp.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUpLeft.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUpLeft.anim
+    projectPath: Assets\Assets\Animations\Car\CarUpLeft.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUpLeft.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUpLeft.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarUpLeft.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUpRight.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUpRight.anim
+    projectPath: Assets\Assets\Animations\Car\CarUpRight.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Car\CarUpRight.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Car\CarUpRight.anim.meta
+    projectPath: Assets\Assets\Animations\Car\CarUpRight.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy.meta
+    projectPath: Assets\Assets\Animations\Enemy.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemydown.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemydown.anim
+    projectPath: Assets\Assets\Animations\Enemy\enemydown.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemydown.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemydown.anim.meta
+    projectPath: Assets\Assets\Animations\Enemy\enemydown.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyleft.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyleft.anim
+    projectPath: Assets\Assets\Animations\Enemy\enemyleft.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyleft.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyleft.anim.meta
+    projectPath: Assets\Assets\Animations\Enemy\enemyleft.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyright.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyright.anim
+    projectPath: Assets\Assets\Animations\Enemy\enemyright.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyright.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyright.anim.meta
+    projectPath: Assets\Assets\Animations\Enemy\enemyright.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\EnemySheet_left.controller
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\EnemySheet_left.controller
+    projectPath: Assets\Assets\Animations\Enemy\EnemySheet_left.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\EnemySheet_left.controller.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\EnemySheet_left.controller.meta
+    projectPath: Assets\Assets\Animations\Enemy\EnemySheet_left.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyup.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyup.anim
+    projectPath: Assets\Assets\Animations\Enemy\enemyup.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Enemy\enemyup.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Enemy\enemyup.anim.meta
+    projectPath: Assets\Assets\Animations\Enemy\enemyup.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar.meta
+    projectPath: Assets\Assets\Animations\HealthBar.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\0.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\0.anim
+    projectPath: Assets\Assets\Animations\HealthBar\0.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\0.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\0.anim.meta
+    projectPath: Assets\Assets\Animations\HealthBar\0.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\100.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\100.anim
+    projectPath: Assets\Assets\Animations\HealthBar\100.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\100.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\100.anim.meta
+    projectPath: Assets\Assets\Animations\HealthBar\100.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\100.controller
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\100.controller
+    projectPath: Assets\Assets\Animations\HealthBar\100.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\100.controller.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\100.controller.meta
+    projectPath: Assets\Assets\Animations\HealthBar\100.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\25.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\25.anim
+    projectPath: Assets\Assets\Animations\HealthBar\25.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\25.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\25.anim.meta
+    projectPath: Assets\Assets\Animations\HealthBar\25.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\50.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\50.anim
+    projectPath: Assets\Assets\Animations\HealthBar\50.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\50.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\50.anim.meta
+    projectPath: Assets\Assets\Animations\HealthBar\50.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\75.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\75.anim
+    projectPath: Assets\Assets\Animations\HealthBar\75.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\HealthBar\75.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\HealthBar\75.anim.meta
+    projectPath: Assets\Assets\Animations\HealthBar\75.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\River.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\River.meta
+    projectPath: Assets\Assets\Animations\River.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\River\River.anim
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\River\River.anim
+    projectPath: Assets\Assets\Animations\River\River.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\River\River.anim.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\River\River.anim.meta
+    projectPath: Assets\Assets\Animations\River\River.anim.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\River\RiverAnimation_0.controller
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\River\RiverAnimation_0.controller
+    projectPath: Assets\Assets\Animations\River\RiverAnimation_0.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\River\RiverAnimation_0.controller.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\River\RiverAnimation_0.controller.meta
+    projectPath: Assets\Assets\Animations\River\RiverAnimation_0.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Thumbs.db
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Thumbs.db
+    projectPath: Assets\Assets\Animations\Thumbs.db
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Animations\Thumbs.db.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Animations\Thumbs.db.meta
+    projectPath: Assets\Assets\Animations\Thumbs.db.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Audio.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Audio.meta
+    projectPath: Assets\Assets\Audio.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Audio\Cyberpunk game.mp3
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Audio\Cyberpunk game.mp3
+    projectPath: Assets\Assets\Audio\Cyberpunk game.mp3
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Audio\Cyberpunk game.mp3.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Audio\Cyberpunk game.mp3.meta
+    projectPath: Assets\Assets\Audio\Cyberpunk game.mp3.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Audio\MainMixer.mixer
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Audio\MainMixer.mixer
+    projectPath: Assets\Assets\Audio\MainMixer.mixer
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Audio\MainMixer.mixer.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Audio\MainMixer.mixer.meta
+    projectPath: Assets\Assets\Audio\MainMixer.mixer.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Backgrounds.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Backgrounds.meta
+    projectPath: Assets\Assets\Backgrounds.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Backgrounds\disco-dba865f1.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Backgrounds\disco-dba865f1.png
+    projectPath: Assets\Assets\Backgrounds\disco-dba865f1.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Backgrounds\disco-dba865f1.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Backgrounds\disco-dba865f1.png.meta
+    projectPath: Assets\Assets\Backgrounds\disco-dba865f1.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts.meta
+    projectPath: Assets\Assets\Fonts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\8-BIT WONDER.TTF
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\8-BIT WONDER.TTF
+    projectPath: Assets\Assets\Fonts\8-BIT WONDER.TTF
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\8-BIT WONDER.TTF.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\8-BIT WONDER.TTF.meta
+    projectPath: Assets\Assets\Fonts\8-BIT WONDER.TTF.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\Jupiter.ttf
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\Jupiter.ttf
+    projectPath: Assets\Assets\Fonts\Jupiter.ttf
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\Jupiter.ttf.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\Jupiter.ttf.meta
+    projectPath: Assets\Assets\Fonts\Jupiter.ttf.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\navycadet.ttf
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\navycadet.ttf
+    projectPath: Assets\Assets\Fonts\navycadet.ttf
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Fonts\navycadet.ttf.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Fonts\navycadet.ttf.meta
+    projectPath: Assets\Assets\Fonts\navycadet.ttf.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites.meta
+    projectPath: Assets\Assets\Sprites.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building1.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building1.png
+    projectPath: Assets\Assets\Sprites\Building1.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building1.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building1.png.meta
+    projectPath: Assets\Assets\Sprites\Building1.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building2.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building2.png
+    projectPath: Assets\Assets\Sprites\Building2.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building2.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building2.png.meta
+    projectPath: Assets\Assets\Sprites\Building2.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building3.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building3.png
+    projectPath: Assets\Assets\Sprites\Building3.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building3.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building3.png.meta
+    projectPath: Assets\Assets\Sprites\Building3.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building4.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building4.png
+    projectPath: Assets\Assets\Sprites\Building4.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building4.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building4.png.meta
+    projectPath: Assets\Assets\Sprites\Building4.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building5.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building5.png
+    projectPath: Assets\Assets\Sprites\Building5.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Building5.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Building5.png.meta
+    projectPath: Assets\Assets\Sprites\Building5.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\bullet.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\bullet.png
+    projectPath: Assets\Assets\Sprites\bullet.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\bullet.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\bullet.png.meta
+    projectPath: Assets\Assets\Sprites\bullet.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\CarSheet.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\CarSheet.png
+    projectPath: Assets\Assets\Sprites\CarSheet.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\CarSheet.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\CarSheet.png.meta
+    projectPath: Assets\Assets\Sprites\CarSheet.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\EnemySheet.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\EnemySheet.png
+    projectPath: Assets\Assets\Sprites\EnemySheet.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\EnemySheet.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\EnemySheet.png.meta
+    projectPath: Assets\Assets\Sprites\EnemySheet.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\HealthBar.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\HealthBar.png
+    projectPath: Assets\Assets\Sprites\HealthBar.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\HealthBar.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\HealthBar.png.meta
+    projectPath: Assets\Assets\Sprites\HealthBar.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\MapLayout.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\MapLayout.png
+    projectPath: Assets\Assets\Sprites\MapLayout.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\MapLayout.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\MapLayout.png.meta
+    projectPath: Assets\Assets\Sprites\MapLayout.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\RiverAnimation.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\RiverAnimation.png
+    projectPath: Assets\Assets\Sprites\RiverAnimation.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\RiverAnimation.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\RiverAnimation.png.meta
+    projectPath: Assets\Assets\Sprites\RiverAnimation.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Spikes_HorizontalLeft.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Spikes_HorizontalLeft.png
+    projectPath: Assets\Assets\Sprites\Spikes_HorizontalLeft.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Spikes_HorizontalLeft.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Spikes_HorizontalLeft.png.meta
+    projectPath: Assets\Assets\Sprites\Spikes_HorizontalLeft.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Thumbs.db
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Thumbs.db
+    projectPath: Assets\Assets\Sprites\Thumbs.db
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Thumbs.db.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Thumbs.db.meta
+    projectPath: Assets\Assets\Sprites\Thumbs.db.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Trees2Bottom.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Trees2Bottom.png
+    projectPath: Assets\Assets\Sprites\Trees2Bottom.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\Trees2Bottom.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\Trees2Bottom.png.meta
+    projectPath: Assets\Assets\Sprites\Trees2Bottom.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\trees2top.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\trees2top.png
+    projectPath: Assets\Assets\Sprites\trees2top.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\trees2top.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\trees2top.png.meta
+    projectPath: Assets\Assets\Sprites\trees2top.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\TreesBottom.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\TreesBottom.png
+    projectPath: Assets\Assets\Sprites\TreesBottom.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\TreesBottom.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\TreesBottom.png.meta
+    projectPath: Assets\Assets\Sprites\TreesBottom.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\TreesTop.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\TreesTop.png
+    projectPath: Assets\Assets\Sprites\TreesTop.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Assets\Sprites\TreesTop.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Assets\Sprites\TreesTop.png.meta
+    projectPath: Assets\Assets\Sprites\TreesTop.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Bounce.physicsMaterial2D
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Bounce.physicsMaterial2D
+    projectPath: Assets\Bounce.physicsMaterial2D
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Bounce.physicsMaterial2D.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Bounce.physicsMaterial2D.meta
+    projectPath: Assets\Bounce.physicsMaterial2D.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Gizmos.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Gizmos.meta
+    projectPath: Assets\Gizmos.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Gizmos\Cinemachine.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Gizmos\Cinemachine.meta
+    projectPath: Assets\Gizmos\Cinemachine.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Gizmos\Cinemachine\cm_logo_lg.png
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Gizmos\Cinemachine\cm_logo_lg.png
+    projectPath: Assets\Gizmos\Cinemachine\cm_logo_lg.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Gizmos\Cinemachine\cm_logo_lg.png.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Gizmos\Cinemachine\cm_logo_lg.png.meta
+    projectPath: Assets\Gizmos\Cinemachine\cm_logo_lg.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub.meta
+    projectPath: Assets\Plugins\GitHub.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor.meta
+    projectPath: Assets\Plugins\GitHub\Editor.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x64.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x64.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x86.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x86.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab.meta
+    projectPath: Assets\Prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\bullet.prefab
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\bullet.prefab
+    projectPath: Assets\Prefab\bullet.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\bullet.prefab.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\bullet.prefab.meta
+    projectPath: Assets\Prefab\bullet.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\Enemy .prefab
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\Enemy .prefab
+    projectPath: Assets\Prefab\Enemy .prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\Enemy .prefab.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\Enemy .prefab.meta
+    projectPath: Assets\Prefab\Enemy .prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\enemyBullet.prefab
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\enemyBullet.prefab
+    projectPath: Assets\Prefab\enemyBullet.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\enemyBullet.prefab.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\enemyBullet.prefab.meta
+    projectPath: Assets\Prefab\enemyBullet.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\Path.prefab
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\Path.prefab
+    projectPath: Assets\Prefab\Path.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Prefab\Path.prefab.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Prefab\Path.prefab.meta
+    projectPath: Assets\Prefab\Path.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scenes.meta
+    projectPath: Assets\Scenes.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\Menu.unity
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scenes\Menu.unity
+    projectPath: Assets\Scenes\Menu.unity
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\Menu.unity.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scenes\Menu.unity.meta
+    projectPath: Assets\Scenes\Menu.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\SampleScene.unity
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scenes\SampleScene.unity
+    projectPath: Assets\Scenes\SampleScene.unity
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\SampleScene.unity.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scenes\SampleScene.unity.meta
+    projectPath: Assets\Scenes\SampleScene.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts.meta
+    projectPath: Assets\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI.meta
+    projectPath: Assets\Scripts\AI.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\EnemyAnimationControl.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\EnemyAnimationControl.cs
+    projectPath: Assets\Scripts\AI\EnemyAnimationControl.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\EnemyAnimationControl.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\EnemyAnimationControl.cs.meta
+    projectPath: Assets\Scripts\AI\EnemyAnimationControl.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\PatrolingEnemyEngineL.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\PatrolingEnemyEngineL.cs
+    projectPath: Assets\Scripts\AI\PatrolingEnemyEngineL.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\PatrolingEnemyEngineL.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\PatrolingEnemyEngineL.cs.meta
+    projectPath: Assets\Scripts\AI\PatrolingEnemyEngineL.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\PatrolingEnemyEngineNL.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\PatrolingEnemyEngineNL.cs
+    projectPath: Assets\Scripts\AI\PatrolingEnemyEngineNL.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\PatrolingEnemyEngineNL.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\PatrolingEnemyEngineNL.cs.meta
+    projectPath: Assets\Scripts\AI\PatrolingEnemyEngineNL.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\WaveControl.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\WaveControl.cs
+    projectPath: Assets\Scripts\AI\WaveControl.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\AI\WaveControl.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\AI\WaveControl.cs.meta
+    projectPath: Assets\Scripts\AI\WaveControl.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts.meta
+    projectPath: Assets\Scripts\Building Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts\BuildingSet1.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts\BuildingSet1.meta
+    projectPath: Assets\Scripts\Building Scripts\BuildingSet1.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs
+    projectPath: Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs.meta
+    projectPath: Assets\Scripts\Building Scripts\BuildingSet1\Building1Script.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs
+    projectPath: Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs.meta
+    projectPath: Assets\Scripts\Building Scripts\BuildingSet1\TransparencyTrigger.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Bullet Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Bullet Scripts.meta
+    projectPath: Assets\Scripts\Bullet Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Bullet Scripts\BulletScript.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Bullet Scripts\BulletScript.cs
+    projectPath: Assets\Scripts\Bullet Scripts\BulletScript.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Bullet Scripts\BulletScript.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Bullet Scripts\BulletScript.cs.meta
+    projectPath: Assets\Scripts\Bullet Scripts\BulletScript.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs
+    projectPath: Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs.meta
+    projectPath: Assets\Scripts\Bullet Scripts\EnemyBulletScript.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Car Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Car Scripts.meta
+    projectPath: Assets\Scripts\Car Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Car Scripts\CarCollider.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Car Scripts\CarCollider.cs
+    projectPath: Assets\Scripts\Car Scripts\CarCollider.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Car Scripts\CarCollider.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Car Scripts\CarCollider.cs.meta
+    projectPath: Assets\Scripts\Car Scripts\CarCollider.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Car Scripts\CarController.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Car Scripts\CarController.cs
+    projectPath: Assets\Scripts\Car Scripts\CarController.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Car Scripts\CarController.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Car Scripts\CarController.cs.meta
+    projectPath: Assets\Scripts\Car Scripts\CarController.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Health Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Health Scripts.meta
+    projectPath: Assets\Scripts\Health Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Health Scripts\HealthBar.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Health Scripts\HealthBar.cs
+    projectPath: Assets\Scripts\Health Scripts\HealthBar.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Health Scripts\HealthBar.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Health Scripts\HealthBar.cs.meta
+    projectPath: Assets\Scripts\Health Scripts\HealthBar.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Menu Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Menu Scripts.meta
+    projectPath: Assets\Scripts\Menu Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Menu Scripts\MainMenu.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Menu Scripts\MainMenu.cs
+    projectPath: Assets\Scripts\Menu Scripts\MainMenu.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Menu Scripts\MainMenu.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Menu Scripts\MainMenu.cs.meta
+    projectPath: Assets\Scripts\Menu Scripts\MainMenu.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Menu Scripts\SettingsMenu.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Menu Scripts\SettingsMenu.cs
+    projectPath: Assets\Scripts\Menu Scripts\SettingsMenu.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Menu Scripts\SettingsMenu.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Menu Scripts\SettingsMenu.cs.meta
+    projectPath: Assets\Scripts\Menu Scripts\SettingsMenu.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts.meta
+    projectPath: Assets\Scripts\Road Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoad.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoad.cs
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoad.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoad.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoad.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoad.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoadsLeftLanes.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\HorizontalRoadsRightLanes.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoad.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoad.cs
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoad.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoad.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoad.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoad.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoadsLeftLanes.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs.meta
+    projectPath: Assets\Scripts\Road Scripts\VerticalRoadsRightLanes.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts.meta
+    projectPath: Assets\Scripts\Spike Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs
+    projectPath: Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs.meta
+    projectPath: Assets\Scripts\Spike Scripts\SlowMotionTrigger.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs
+    projectPath: Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs.meta
+    projectPath: Assets\Scripts\Spike Scripts\SlowMotionTriggerFalse.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SpawnSpikes.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SpawnSpikes.cs
+    projectPath: Assets\Scripts\Spike Scripts\SpawnSpikes.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SpawnSpikes.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SpawnSpikes.cs.meta
+    projectPath: Assets\Scripts\Spike Scripts\SpawnSpikes.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SpikesDamage.cs
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SpikesDamage.cs
+    projectPath: Assets\Scripts\Spike Scripts\SpikesDamage.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\Spike Scripts\SpikesDamage.cs.meta
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Assets\Scripts\Spike Scripts\SpikesDamage.cs.meta
+    projectPath: Assets\Scripts\Spike Scripts\SpikesDamage.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Packages\manifest.json
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\Packages\manifest.json
+    projectPath: Packages\manifest.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\AudioManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\AudioManager.asset
+    projectPath: ProjectSettings\AudioManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ClusterInputManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\ClusterInputManager.asset
+    projectPath: ProjectSettings\ClusterInputManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\DynamicsManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\DynamicsManager.asset
+    projectPath: ProjectSettings\DynamicsManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\EditorSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\EditorSettings.asset
+    projectPath: ProjectSettings\EditorSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\GraphicsSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\GraphicsSettings.asset
+    projectPath: ProjectSettings\GraphicsSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\InputManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\NavMeshAreas.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\NavMeshAreas.asset
+    projectPath: ProjectSettings\NavMeshAreas.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\NetworkManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\NetworkManager.asset
+    projectPath: ProjectSettings\NetworkManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\Physics2DSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\Physics2DSettings.asset
+    projectPath: ProjectSettings\Physics2DSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\PresetManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\PresetManager.asset
+    projectPath: ProjectSettings\PresetManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ProjectSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\ProjectVersion.txt
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\ProjectVersion.txt
+    projectPath: ProjectSettings\ProjectVersion.txt
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\TagManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\TimeManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\TimeManager.asset
+    projectPath: ProjectSettings\TimeManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: ProjectSettings\VFXManager.asset
+    fullPath: C:\Users\Aorus PC\Desktop\RogueRun\ProjectSettings\VFXManager.asset
+    projectPath: ProjectSettings\VFXManager.asset
+    originalPath: 
+    status: 1
+    staged: 0
