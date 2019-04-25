@@ -1,0 +1,27 @@
+#pragma once
+
+#define FROG_MOVEMENT_AMOUNT 32
+
+#define FROG_SIZE_WIDTH 32.0f
+#define FROG_SIZE_HEIGHT 32.0f
+
+#define CAR_SIZE_WIDTH 60.0f
+#define CAR_SIZE_HEIGHT 25.0f
+
+#define LOG_SIZE_WIDTH 110.0f
+#define LOG_SIZE_HEIGHT 32.0f
+
+#define TURTLE_SIZE_WIDTH 60.0f
+#define TURTLE_SIZE_HEIGHT 30.0f
+
+#define CAR_MOVEMENT_SPEED_FAST 0.05f
+#define CAR_MOVEMENT_SPEED_SLOW 0.03f
+
+#define LOG_MOVEMENT_SPEED 0.05f
+
+#define TURTLE_MOVEMENT_SPEED 0.04f
+
+#define WINDOW_WIDTH 640
+#define WINDOW_HEIGHT 640
+
+#define WINDOW_TITLE "Frogger Game"
