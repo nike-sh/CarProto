@@ -204,18 +204,65 @@ void Cars::draw(sf::RenderWindow& window)
 
 //The sf::rectangeShape Cars are returning the shapes of the Cars. 
 //It's later used in the main.cpp in order to detect collision between car(number)Shape and the Frog
-sf::RectangleShape Cars::returnCarShape(sf::RectangleShape& returnedCarShape[15]) {
-	for (int i = 0; i < 15; i++)
-	{
-		carShape[i] = returnedCarShape[i];
-		return returnedCarShape[i];
-	}
-
-	
-
+sf::RectangleShape Cars::returnShapeFor1() {
+	return carShape[0];
 }
 
+sf::RectangleShape Cars::returnShapeFor2() {
+	return carShape[1];
+}
 
+sf::RectangleShape Cars::returnShapeFor3() {
+	return carShape[2];
+}
+
+sf::RectangleShape Cars::returnShapeFor4() {
+	return carShape[3];
+}
+
+sf::RectangleShape Cars::returnShapeFor5() {
+	return carShape[4];
+}
+
+sf::RectangleShape Cars::returnShapeFor6() {
+	return carShape[5];
+}
+
+sf::RectangleShape Cars::returnShapeFor7() {
+	return carShape[6];
+}
+
+sf::RectangleShape Cars::returnShapeFor8() {
+	return carShape[7];
+}
+
+sf::RectangleShape Cars::returnShapeFor9() {
+	return carShape[8];
+}
+
+sf::RectangleShape Cars::returnShapeFor10() {
+	return carShape[9];
+}
+
+sf::RectangleShape Cars::returnShapeFor11() {
+	return carShape[10];
+}
+
+sf::RectangleShape Cars::returnShapeFor12() {
+	return carShape[11];
+}
+
+sf::RectangleShape Cars::returnShapeFor13() {
+	return carShape[12];
+}
+
+sf::RectangleShape Cars::returnShapeFor14() {
+	return carShape[13];
+}
+
+sf::RectangleShape Cars::returnShapeFor15() {
+	return carShape[14];
+}
 
 
 void Cars::move()

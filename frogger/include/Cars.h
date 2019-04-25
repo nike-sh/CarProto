@@ -19,7 +19,21 @@ public:
 	void reset();
 
 	//The next 15 functions are returning the specified car shapes, which are then used in the main.cpp to detect collision between the different cars and the frog
-	sf::RectangleShape returnCarShape(sf::RectangleShape returnedCarShape[15]);
+	sf::RectangleShape returnShapeFor1();
+	sf::RectangleShape returnShapeFor2();
+	sf::RectangleShape returnShapeFor3();
+	sf::RectangleShape returnShapeFor4();
+	sf::RectangleShape returnShapeFor5();
+	sf::RectangleShape returnShapeFor6();
+	sf::RectangleShape returnShapeFor7();
+	sf::RectangleShape returnShapeFor8();
+	sf::RectangleShape returnShapeFor9();
+	sf::RectangleShape returnShapeFor10();
+	sf::RectangleShape returnShapeFor11();
+	sf::RectangleShape returnShapeFor12();
+	sf::RectangleShape returnShapeFor13();
+	sf::RectangleShape returnShapeFor14();
+	sf::RectangleShape returnShapeFor15();
 
 private:
 

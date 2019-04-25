@@ -127,14 +127,28 @@ int main() {
 		}
 		frogHome.spawnBase();
 		//next 15 lines are the condition for collision detection between the frog and the cars
-		/*if ((frog.returnShape().getGlobalBounds().intersects(cars.returnCarShape1().getGlobalBounds())
+		if ((frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor1().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor2().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor3().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor4().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor5().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor6().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor7().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor8().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor9().getGlobalBounds())) ||
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor10().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor11().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor12().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor13().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor14().getGlobalBounds())) || 
+			(frog.returnShape().getGlobalBounds().intersects(cars.returnShapeFor15().getGlobalBounds())))
 		{
 			//This triggers the frog.death() function in Frog.cpp
 			frog.death();
 
 			//adds 1 to the death counter. The death counter is used at line 99 and 121.
 			deathCount += 1;
-		}*/
+		}
 		
 
 		//collision between the water and the frog and other objects which are in the water
